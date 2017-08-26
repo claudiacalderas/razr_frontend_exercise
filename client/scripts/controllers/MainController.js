@@ -1,4 +1,4 @@
-myApp.controller('MainController', ['$scope', 'MainService', function($scope, MainService){
+myApp.controller('MainController', ['$scope', 'MainService', function($scope, MainService) {
 
   console.log('MainController loaded');
 
@@ -11,5 +11,16 @@ myApp.controller('MainController', ['$scope', 'MainService', function($scope, Ma
   let mySquare = new Square(12);
   returnedString = mySquare.toString();
   console.log(returnedString);
+
+  // SHAPE CONTAINER INSTANCE
+  let myShapeContainer = new ShapesContainer();
+  myShapeContainer.generate();
+  console.log(myShapeContainer);
+
+  // Sort array of shapes
+  Utilities.sort(myShapeContainer.shapes);
+  console.log(myShapeContainer);
+
+
 
 }]);

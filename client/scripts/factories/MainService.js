@@ -1,4 +1,4 @@
-myApp.factory('MainService', ['$interval', function($interval){
+myApp.factory('MainService', ['$interval', function($interval) {
 
 
   return {

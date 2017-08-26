@@ -3,7 +3,7 @@ var router = express.Router();
 var path = require('path');
 
 // BASE ROUTE
-router.get('/', function(req,res){
+router.get('/', function(req,res) {
     res.sendFile(path.resolve('server/public/views/index.html'));
 });
 
