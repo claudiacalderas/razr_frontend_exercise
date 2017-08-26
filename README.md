@@ -4,8 +4,6 @@
 A web responsive app that regenerates and renders an array of shapes (circles and squares)
 with random size and rotates the squares by 10 degrees every iteration.
 
-_razrApp_
-
 ![razrApp](razrApp.gif)
 
 ## Technologies
@@ -65,4 +63,4 @@ Each time the page is loaded, a new set of shapes should be generated
 
 **Bonus Section (Optional)**
 
-Make the web page start a timer that regenerates and rerenders the shapes twice every second. Each half second, rotate the squares by 10 degrees. 
+Make the web page start a timer that regenerates and rerenders the shapes twice every second. Each half second, rotate the squares by 10 degrees.
