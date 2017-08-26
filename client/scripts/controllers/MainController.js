@@ -17,10 +17,10 @@ myApp.controller('MainController', ['$scope', 'MainService', function($scope, Ma
   myShapeContainer.generate();
   console.log(myShapeContainer);
 
-  // Sort array of shapes
+  // Sorted array of shapes
   Utilities.sort(myShapeContainer.shapes);
   console.log(myShapeContainer);
 
-
+  $scope.arrayOfShapes = myShapeContainer.shapes;
 
 }]);
