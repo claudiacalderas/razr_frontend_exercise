@@ -1,5 +1,5 @@
 class Square {
-  constructor(size) {
+  constructor(size, rotation) {
     this.size = size;
     this.area = this.getArea();
     // Square style for DOM displaying
@@ -7,7 +7,8 @@ class Square {
       'width' : size + 'px',
       'height' : size + 'px',
       'background' : SQUARE_COLOR,
-      'margin' : '5px'
+      'margin' : '20px',
+      'transform' : 'rotate('+ rotation +'deg)'
     }
   }
 
