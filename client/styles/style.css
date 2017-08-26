@@ -2,18 +2,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-.squareShape {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  background-color: blue;
-}
-
-.circleShape {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-  border-radius: 50%;
-  background-color: red;
-}

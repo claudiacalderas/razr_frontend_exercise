@@ -1,4 +1,4 @@
-myApp.controller('MainController', ['$scope', 'MainService', function($scope, MainService) {
+myApp.controller('MainController', ['$scope', function($scope) {
 
   console.log('MainController loaded');
 
