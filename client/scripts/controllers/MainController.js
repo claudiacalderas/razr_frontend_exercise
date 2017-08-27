@@ -1,14 +1,17 @@
 myApp.controller('MainController', ['$scope', 'MainService', function($scope, MainService) {
 
-  console.log('MainController loaded');
+  // CONSOLE LOGGING THE RESULT OF toString() FUNCTION FOR A CIRCLE AND A
+  // SQUARE WITH RANDOM RADIUS AND SIZE
 
   // CIRCLE INSTANCE
-  let myCircle = new Circle(10);
+  let randomRadius = Utilities.randomNumber(1, 100);
+  let myCircle = new Circle(randomRadius);
   let returnedString = myCircle.toString();
   console.log(returnedString);
 
   // SQUARE INSTANCE
-  let mySquare = new Square(12);
+  let randomSize = Utilities.randomNumber(1, 100);
+  let mySquare = new Square(randomSize);
   returnedString = mySquare.toString();
   console.log(returnedString);
 

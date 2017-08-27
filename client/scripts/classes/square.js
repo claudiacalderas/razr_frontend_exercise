@@ -9,18 +9,18 @@ class Square {
       'background' : SQUARE_COLOR,
       'margin' : '20px',
       'transform' : 'rotate('+ rotation +'deg)'
-    }
-  }
+    };
+  };
 
   // returns square's area
   getArea() {
     return parseFloat((this.size * this.size).toFixed(2));
-  }
-}
+  };
+};
 
 // toString() function overriden to return required string
 Square.prototype.toString = function() {
   let stringToReturn = 'Square: Size = ' + this.size + ', Area = ';
   stringToReturn +=  this.getArea();
   return stringToReturn;
-}
+};
