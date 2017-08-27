@@ -1,5 +1,7 @@
 # RAZR FRONT-END DEVELOPER CODING TEST
 
+The project can be viewed live [here.](https://nameless-waters-73889.herokuapp.com)
+
 ## Application Overview
 A web responsive app that regenerates and renders an array of shapes (circles and squares)
 with random size and rotates the squares by 10 degrees every iteration.
@@ -19,6 +21,7 @@ with random size and rotates the squares by 10 degrees every iteration.
 2. Run `npm install`
 3. Run `grunt`
 4. Start the server by running `npm start`
+5. The project will open in your web browser at localhost:8000
 
 ## Application Features/Requirements
 
