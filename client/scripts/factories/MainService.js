@@ -1,20 +1,18 @@
 myApp.factory('MainService', ['$interval', function($interval){
 
-  // initial rotation set to 0, will increase 10 by 10
+  // initial rotation set to 0, will increase based on DEGREE_ROTATION constant
   let currentRotation = 0;
 
   // SHAPE CONTAINER INSTANCE
   let myShapeContainer = new ShapesContainer();
   myShapeContainer.generate(currentRotation);
-  console.log(myShapeContainer);
 
-  // Sorted array of shapes
+  // Sorts array of shapes
   Utilities.sort(myShapeContainer.shapes);
-  console.log(myShapeContainer);
 
   // regenerates and rerenders the shapes every interval
   let clock = $interval( () => {
-    currentRotation += 10;
+    currentRotation += DEGREE_ROTATION;
     myShapeContainer.regenerate(currentRotation);
     Utilities.sort(myShapeContainer.shapes);
   }, REGENERATE_INTERVAL);

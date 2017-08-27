@@ -18,6 +18,7 @@ class Circle {
   }
 }
 
+// toString() function overriden to return required string
 Circle.prototype.toString = function() {
   let stringToReturn = 'Circle: Radius = ' + this.radius + ', Area = ';
   stringToReturn +=  this.getArea();

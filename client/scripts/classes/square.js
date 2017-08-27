@@ -18,6 +18,7 @@ class Square {
   }
 }
 
+// toString() function overriden to return required string
 Square.prototype.toString = function() {
   let stringToReturn = 'Square: Size = ' + this.size + ', Area = ';
   stringToReturn +=  this.getArea();

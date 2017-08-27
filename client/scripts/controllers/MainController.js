@@ -12,15 +12,7 @@ myApp.controller('MainController', ['$scope', 'MainService', function($scope, Ma
   returnedString = mySquare.toString();
   console.log(returnedString);
 
-  // // SHAPE CONTAINER INSTANCE
-  // let myShapeContainer = new ShapesContainer();
-  // myShapeContainer.generate();
-  // console.log(myShapeContainer);
-  //
-  // // Sorted array of shapes
-  // Utilities.sort(myShapeContainer.shapes);
-  // console.log(myShapeContainer);
-
+  // Array of shapes displayed. Array is generated and regenerated in the MainService
   $scope.arrayOfShapes = MainService.myShapeContainer.shapes;
 
 }]);
