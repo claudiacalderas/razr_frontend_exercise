@@ -1,0 +1,12 @@
+<!-- MAIN VIEW -->
+<div layout="row">
+  <div layout="column" flex-gt-md="10" flex-xs="5" flex-sm="5" flex-md="5"></div>
+  <div layout="column" flex-gt-md="80" flex-xs="90" flex-sm="90" flex-md="90">
+    <!-- SHAPES DISPLAYED BASED ON SORTED ARRAY -->
+    <div class="shapesContainer" layout="row">
+      <div class="shapesContainer" ng-repeat="shape in arrayOfShapes">
+        <span ng-style="shape.shapeStyle"></span>
+      </div>
+    </div>
+  </div>
+</div>
