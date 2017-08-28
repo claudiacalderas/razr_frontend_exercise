@@ -1,11 +1,12 @@
 class Circle {
   constructor(radius) {
     this.radius = radius;
+    this.diameter = radius * 2;
     this.area = this.getArea();
     // Circle style for DOM displaying
     this.shapeStyle = {
-      'width' : radius * 2 + 'px',
-      'height' : radius * 2 + 'px',
+      'width' : this.diameter + 'px',
+      'height' : this.diameter + 'px',
       'background' : CIRCLE_COLOR,
       'border-radius' : '50%',
       'margin' : '5px'

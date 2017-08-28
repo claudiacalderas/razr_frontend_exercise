@@ -24,11 +24,12 @@ myApp.config(['$routeProvider', '$locationProvider',
 class Circle {
   constructor(radius) {
     this.radius = radius;
+    this.diameter = radius * 2;
     this.area = this.getArea();
     // Circle style for DOM displaying
     this.shapeStyle = {
-      'width' : radius * 2 + 'px',
-      'height' : radius * 2 + 'px',
+      'width' : this.diameter + 'px',
+      'height' : this.diameter + 'px',
       'background' : CIRCLE_COLOR,
       'border-radius' : '50%',
       'margin' : '5px'
@@ -56,7 +57,7 @@ class ShapesContainer {
   // generates array of shapes (circles and squares)
   generate(squareRotation) {
     for (let i = 0; i < NUM_CIRCLES; i++) {
-      let randomRadius = Utilities.randomNumber(1, 100);
+      let randomRadius = Utilities.randomNumber(1, 50);
       let circleShape = new Circle(randomRadius);
       this.shapes.push(circleShape);
     };
@@ -70,7 +71,7 @@ class ShapesContainer {
   // regenerates array of shapes by adding a new shape and shifting one at a time
   regenerate(squareRotation) {
     for (let i = 0; i < NUM_CIRCLES; i++) {
-      let randomRadius = Utilities.randomNumber(1, 100);
+      let randomRadius = Utilities.randomNumber(1, 50);
       let circleShape = new Circle(randomRadius);
       this.shapes.push(circleShape);
       this.shapes.shift();
